@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.start {
+  width: 392px;
+  height: 307px;
+  border: 1px solid red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/нім.jpg");
+}
+
+.move {
+  animation-name: anime;
+  animation-duration: 2s;
+  /* animation-timing-function: cubic-bezier(0.075, 0.42, 0.65, 1); */
+}
+
+.move:hover {
+  animation-play-state: paused;
+}
+
+@keyframes anime {
+  from {
+    background-image: url("../assets/нім.jpg");
+  }
+
+  50% {
+    background-image: url("../assets/фр.jpg");
+  }
+
+  to {
+    background-image: url("../assets/нім.jpg");
+  }
+}
+
+.container {
+  width: 392px;
+}
+
+.button {
+  margin: 10px auto;
+  display: block;
+}
